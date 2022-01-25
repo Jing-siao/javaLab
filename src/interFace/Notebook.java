@@ -1,6 +1,10 @@
 package interFace;
+
+import java.io.Serializable;
+
 //多個型態:Notebook,Product,Warrantable
-public class Notebook extends Product implements Warrantable{// 繼承父類別 建構方法不會繼承
+//Serializable 空介面
+public class Notebook extends Product implements Warrantable,Serializable{// 繼承父類別 建構方法不會繼承
 	public int warranty;// 保固天數
 	@Override
 	public int wardays() {//子類別必須實作
