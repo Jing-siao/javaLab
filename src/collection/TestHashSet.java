@@ -7,13 +7,13 @@ import java.util.Set;
 public class TestHashSet {
 
 	public static void main(String[] args) {
-		Set set = new LinkedHashSet();
+		Set<String> set = new LinkedHashSet<>();
 		set.add("hello");
 		boolean success = set.add("hello");
 		System.out.println(success);
 		System.out.println("size="+set.size());
 		set.add("world");
-		set.add(3);
+//		set.add(3);
 		System.out.println("size="+set.size());
 		boolean helloExist = set.contains("hello");
 		System.out.println("hello是否存在"+helloExist);
